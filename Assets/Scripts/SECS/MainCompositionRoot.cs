@@ -40,14 +40,6 @@ namespace RPG.SECS
             _enginesRoot = new EnginesRoot(_unityEntitySubmissionScheduler);
             _entityFactory = _enginesRoot.GenerateEntityFactory();
 
-            var entityFunctions = _enginesRoot.GenerateEntityFunctions();
-
-            /*
-            var playerInputEngine = new PlayerInputEngine();
-
-            _enginesRoot.AddEngine(playerInputEngine);
-            */
-
             var playerMovementEngine = new PlayerMovementEngine();
 
             _enginesRoot.AddEngine(playerMovementEngine);
